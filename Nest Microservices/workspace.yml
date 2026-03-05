@@ -1,0 +1,12 @@
+opencollection: 1.0.0
+info:
+  name: "Nest Microservices"
+  type: workspace
+
+collections:
+  - name: "Gateway"
+    path: "collections/Gateway"
+
+specs:
+
+docs: ''
