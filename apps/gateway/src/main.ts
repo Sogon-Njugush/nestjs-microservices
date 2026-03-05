@@ -11,10 +11,10 @@ async function bootstrap() {
 
   app.enableShutdownHooks();
 
-  const port = Number(process.env.port) || 3000;
+  const port = Number(process.env.GATEWAY_PORT ?? 3000);
 
   await app.listen(port);
 
-  logger.log(`Gateway running on port ${port}`);
+  logger.log(`Gateway running on port: ${port}`);
 }
 bootstrap();
